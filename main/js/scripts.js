@@ -1,8 +1,8 @@
 /*!
-* Start Bootstrap - Grayscale v7.0.5 (https://startbootstrap.com/theme/grayscale)
-* Copyright 2013-2022 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE)
-*/
+ * Start Bootstrap - Grayscale v7.0.5 (https://startbootstrap.com/theme/grayscale)
+ * Copyright 2013-2022 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE)
+ */
 //
 // Scripts
 // 
@@ -10,7 +10,7 @@
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
-    var navbarShrink = function () {
+    var navbarShrink = function() {
         const navbarCollapsible = document.body.querySelector('#mainNav');
         if (!navbarCollapsible) {
             return;
@@ -43,7 +43,7 @@ window.addEventListener('DOMContentLoaded', event => {
     const responsiveNavItems = [].slice.call(
         document.querySelectorAll('#navbarResponsive .nav-link')
     );
-    responsiveNavItems.map(function (responsiveNavItem) {
+    responsiveNavItems.map(function(responsiveNavItem) {
         responsiveNavItem.addEventListener('click', () => {
             if (window.getComputedStyle(navbarToggler).display !== 'none') {
                 navbarToggler.click();
@@ -52,9 +52,17 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
     // Load all dynamic pages
-    $( "#projectSection" ).load( "./sections/projects.html" );
-    $( "#modalSection" ).load( "./sections/modal.html" );
+    $("#projectSection").load("./sections/projects.html");
+    $("#modalSection").load("./sections/modal.html");
 
 
     // On play vid
+
+    window.addEventListener("load", function() {
+        setTimeout(myFunction, 1000);
+    });
+
+    function myFunction() {
+        document.querySelector("body").classList.add("loaded");
+    }
 });
