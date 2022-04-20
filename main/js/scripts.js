@@ -53,4 +53,8 @@ window.addEventListener('DOMContentLoaded', event => {
 
     // Load all dynamic pages
     $( "#projectSection" ).load( "./sections/projects.html" );
+    $( "#modalSection" ).load( "./sections/modal.html" );
+
+
+    // On play vid
 });

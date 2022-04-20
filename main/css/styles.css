@@ -12487,7 +12487,7 @@ fieldset:disabled .btn {
   }
 }
 
-
+/* Checked above */
 
 @font-face {
   font-family: 'Amelina';
@@ -12549,6 +12549,7 @@ fieldset:disabled .btn {
 
 
 
+/* Checked above */
 
 
 
@@ -12730,7 +12731,7 @@ body {
 
 .about-section {
   /* padding-top: 10rem; */
-  background: linear-gradient(to bottom, #f4a50a 0%, #f4a50a 75%, #FFF 100%);
+  background: linear-gradient(to bottom, #f4a50a 0%, #f4a50a 75%, #F7F8F9 100%);
   color: #292A26!important;
 }
 
@@ -12851,6 +12852,9 @@ body {
     display: none;
   }
 
+  .smallScreen h4{
+    font-size: 300%!important;
+  }
   .smallScreen {
     display: block;
   }
@@ -12863,6 +12867,7 @@ body {
 
   .smallScreen {
     display: none;
+    
   }
 }
 
@@ -12922,9 +12927,9 @@ body {
 
 
 
-text {
+/* text {
   padding-block: 30px;
-}
+} */
 
 
 #section-1 h4{
@@ -12947,5 +12952,16 @@ text {
 }
 #section-7 h4{
   color:#7030A0;
+}
+
+
+@media (max-width: 767.98px){
+  .modal-backdrop{
+    width: -webkit-fill-available!important;
+    height: -webkit-fill-available!important;
+  }
+  .modal{
+    padding-right: 300px!important;
+  }
 }
 
